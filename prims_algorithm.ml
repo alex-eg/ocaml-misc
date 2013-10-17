@@ -1,4 +1,11 @@
-let print_border w h =
+let init_maze w h =
+  let res = Array.make w (Array.make h 0) in
+  for i = 0 to w - 1 do
+    res.(i) <- Array.make h 0
+  done;
+  res;;
+
+let generate_maze w h =
   for i = 1 to h + 2 do
     print_char '#'
   done;
