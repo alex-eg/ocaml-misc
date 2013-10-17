@@ -2,3 +2,5 @@
 *.cmi
 *.cmx
 *.o
+prims_algorithm
+count_words
