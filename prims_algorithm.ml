@@ -29,5 +29,5 @@ let () =
   else
     let width = int_of_string Sys.argv.(1) and
 	height = int_of_string Sys.argv.(2) in
-    print_border width height;;
+    generate_maze width height;;
       
