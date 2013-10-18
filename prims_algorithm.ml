@@ -1,3 +1,6 @@
+let generate_maze w h =
+  "stub";;
+  
 let init_maze w h =
   let res = Array.make w (Array.make h 0) in
   for i = 0 to w - 1 do
@@ -5,7 +8,7 @@ let init_maze w h =
   done;
   res;;
 
-let generate_maze w h =
+let print_maze (maze, w, h) =
   for i = 1 to h + 2 do
     print_char '#'
   done;
@@ -29,5 +32,5 @@ let () =
   else
     let width = int_of_string Sys.argv.(1) and
 	height = int_of_string Sys.argv.(2) in
-    generate_maze width height;;
+    print_maze (generate_maze width height, width, height);;
       
